@@ -26,7 +26,7 @@
                            FontSize="16"
                            LineHeight="22" />
 
-                <TextBlock Text="Введите строку:"
+                <TextBlock Text="Введите строку из русских слов:"
                            Margin="0,0,0,5"
                            FontSize="16" />
 

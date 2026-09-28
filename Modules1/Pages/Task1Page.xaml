@@ -1,0 +1,86 @@
+<Page x:Class="Modules1.Pages.Task1Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Задача 9.1"
+      Background="White"
+      FontFamily="Times New Roman">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Border Margin="10"
+                Padding="25"
+                Background="#FF9B9393"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <StackPanel MaxWidth="720" HorizontalAlignment="Left">
+                <TextBlock Text="Задача 9.1 - вариант 7"
+                           FontSize="24"
+                           FontWeight="Bold" />
+
+                <TextBlock Margin="0,8,0,15"
+                           Text="Определение количества дней в году"
+                           FontSize="18"
+                           FontWeight="Bold" />
+
+                <TextBlock Margin="0,0,0,20"
+                           Text="Дан номер некоторого года - положительное целое число. Вывести число дней в этом году: 365 для обычного года или 366 для високосного. Високосным считается год, который делится на 400, либо делится на 4, но не делится на 100."
+                           TextWrapping="Wrap"
+                           FontSize="16"
+                           LineHeight="22" />
+
+                <TextBlock Text="Введите год:"
+                           Margin="0,0,0,5"
+                           FontSize="16" />
+
+                <TextBox x:Name="yearTextBox"
+                         Width="250"
+                         Height="35"
+                         Padding="7,4"
+                         HorizontalAlignment="Left"
+                         Background="White"
+                         Foreground="Black"
+                         BorderBrush="Black"
+                         BorderThickness="1"
+                         FontFamily="Times New Roman"
+                         FontSize="16"
+                         MaxLength="9" />
+
+                <TextBlock x:Name="validationTextBlock"
+                           MinHeight="22"
+                           Margin="0,5,0,0"
+                           Foreground="Black"
+                           FontSize="15"
+                           FontWeight="Bold"
+                           TextWrapping="Wrap" />
+
+                <Button x:Name="calculateDaysButton"
+                        Width="160"
+                        Height="38"
+                        Margin="0,10,0,20"
+                        HorizontalAlignment="Left"
+                        Content="Выполнить"
+                        Background="White"
+                        Foreground="Black"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                        FontFamily="Times New Roman"
+                        FontSize="16"
+                        IsDefault="True"
+                        Click="CalculateDaysButton_Click" />
+
+                <TextBlock Text="Результат:"
+                           Margin="0,0,0,5"
+                           FontSize="16" />
+
+                <TextBox x:Name="resultTextBox"
+                         Height="42"
+                         Padding="7"
+                         IsReadOnly="True"
+                         Background="White"
+                         Foreground="Black"
+                         BorderBrush="Black"
+                         BorderThickness="1"
+                         FontFamily="Times New Roman"
+                         FontSize="16" />
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
+</Page>

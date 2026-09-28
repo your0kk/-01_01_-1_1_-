@@ -1,0 +1,85 @@
+<Page x:Class="Modules1.Pages.Task2Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Задача 9.2"
+      Background="White"
+      FontFamily="Times New Roman">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Border Margin="10"
+                Padding="25"
+                Background="#FF9B9393"
+                BorderBrush="Black"
+                BorderThickness="1">
+            <StackPanel MaxWidth="720" HorizontalAlignment="Left">
+                <TextBlock Text="Задача 9.2 - вариант 7"
+                           FontSize="24"
+                           FontWeight="Bold" />
+
+                <TextBlock Margin="0,8,0,15"
+                           Text="Подсчет слов с тремя буквами А"
+                           FontSize="18"
+                           FontWeight="Bold" />
+
+                <TextBlock Margin="0,0,0,20"
+                           Text="Дана строка, состоящая из русских слов, разделенных одним или несколькими пробелами. Определить количество слов, которые содержат ровно три буквы А. Регистр букв не учитывается."
+                           TextWrapping="Wrap"
+                           FontSize="16"
+                           LineHeight="22" />
+
+                <TextBlock Text="Введите строку:"
+                           Margin="0,0,0,5"
+                           FontSize="16" />
+
+                <TextBox x:Name="sourceTextBox"
+                         MinHeight="80"
+                         Padding="7"
+                         AcceptsReturn="True"
+                         TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto"
+                         Background="White"
+                         Foreground="Black"
+                         BorderBrush="Black"
+                         BorderThickness="1"
+                         FontFamily="Times New Roman"
+                         FontSize="16" />
+
+                <TextBlock x:Name="validationTextBlock"
+                           MinHeight="22"
+                           Margin="0,5,0,0"
+                           Foreground="Black"
+                           FontSize="15"
+                           FontWeight="Bold"
+                           TextWrapping="Wrap" />
+
+                <Button x:Name="countWordsButton"
+                        Width="160"
+                        Height="38"
+                        Margin="0,10,0,20"
+                        HorizontalAlignment="Left"
+                        Content="Выполнить"
+                        Background="White"
+                        Foreground="Black"
+                        BorderBrush="Black"
+                        BorderThickness="1"
+                        FontFamily="Times New Roman"
+                        FontSize="16"
+                        Click="CountWordsButton_Click" />
+
+                <TextBlock Text="Результат:"
+                           Margin="0,0,0,5"
+                           FontSize="16" />
+
+                <TextBox x:Name="resultTextBox"
+                         Height="42"
+                         Padding="7"
+                         IsReadOnly="True"
+                         Background="White"
+                         Foreground="Black"
+                         BorderBrush="Black"
+                         BorderThickness="1"
+                         FontFamily="Times New Roman"
+                         FontSize="16" />
+            </StackPanel>
+        </Border>
+    </ScrollViewer>
+</Page>
